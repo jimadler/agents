@@ -16,6 +16,7 @@
     - Go to ``SSH`` context (top right)
       - New Connection: ``jim@192.168.1.123``
 
+## Utilities
 - **SSH Setup**
   - Generate Keys: ``ssh-keygen -t ed25519 -C "jims-mac-mini@jimadler.me"``
   - Login: 
@@ -23,6 +24,8 @@
         $ ssh jim@192.168.1.123
         $ Are you sure you want to continue connecting (yes/no/[fingerprint])? <yes>
 
+- Git
+  - Push: ``git push -u origin main``
 
 ## Mac Mini: Out-of-the-Box Installation
 - **Install Homebrew**
