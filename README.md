@@ -6,7 +6,7 @@
 - [Utilities](#utilities)
   - [Mac Mini: Out-of-the-Box Installation](#mac-mini-out-of-the-box-installation)
 
-## Hermes Installation
+## Hermes Installation 
 - **On Mac Mini**
   1. Download: ``$ curl -fsSL https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.sh | bash``
   1. Quick Setup
