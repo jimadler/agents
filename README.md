@@ -4,7 +4,7 @@
 - [Hermes Installation](#hermes-installation)
 - [Remote IntelliJ Development](#remote-intellij-development)
 - [Utilities](#utilities)
-- [Mac Mini: Out-of-the-Box Installation](#mac-mini-out-of-the-box-installation)
+  - [Mac Mini: Out-of-the-Box Installation](#mac-mini-out-of-the-box-installation)
 
 ## Hermes Installation
 - **On Mac Mini**
