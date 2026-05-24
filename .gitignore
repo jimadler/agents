@@ -12,3 +12,4 @@ __pycache__/
 *.gsheet
 __python2__/
 credentials/
+.tmp/

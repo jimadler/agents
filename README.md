@@ -6,7 +6,7 @@
 - [Utilities](#utilities)
   - [Mac Mini: Out-of-the-Box Installation](#mac-mini-out-of-the-box-installation)
 
-## Hermes Installation 
+## Hermes Installation
 - **On Mac Mini**
   1. Download: ``$ curl -fsSL https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.sh | bash``
   1. Quick Setup
@@ -37,7 +37,7 @@
              - For ``smart-tinkering``, ``project-related-id`` = ``538130621360`` (see [Compute Engine default service account](https://console.cloud.google.com/iam-admin/iam?authuser=1&project=smart-tinkering))
          - Install python dependencies
 
-               $ source ~/.hermes/hermes-agent/.venv/bin/activate
+               $ source ~/.hermes/hermes-agent/venv/bin/activate
                $ uv pip install --python ~/.hermes/hermes-agent/venv/ google-cloud-pubsub google-api-python-client google-auth google-auth-oauthlib
                $ hermes gateway restart
 

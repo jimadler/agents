@@ -1,0 +1,4 @@
+# Requirements for Google App Engine only
+# Usage: uv pip install --python ~/.hermes/hermes-agent/venv/ -Ur requirements.txt
+
+beautifulsoup4

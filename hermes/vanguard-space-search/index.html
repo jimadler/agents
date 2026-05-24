@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hermes Hub</title>
+    <style>
+        body { font-family: sans-serif; display: flex; height: 100vh; margin: 0; }
+        nav { width: 250px; background: #333; color: white; padding: 1rem; flex-shrink: 0; }
+        main { flex: 1; padding: 2rem; background: #f4f4f4; }
+        a { color: #fff; display: block; margin-bottom: 0.5rem; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .card { background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        th, td { text-align: left; padding: 0.75rem; border-bottom: 1px solid #ddd; }
+        th { background-color: #eee; }
+        .intel-link { color: #0055ff; }
+    </style>
+</head>
+<body>
+    <nav>
+        <h2><a href="/">Hermes Project Hub</a></h2>
+        <a href="/vanguard-space-search/index.html">Vanguard Space Search</a>
+    </nav>
+    <main id="main-content">
+        <h1>Vanguard Space Search</h1>
+        <div class="card">
+            <h3>Live Intelligence</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Target Property</th>
+                        <th>Innovation Score</th>
+                        <th>Commute (Train)</th>
+                    </tr>
+                </thead>
+                <tbody id="intel-body"></tbody>
+            </table>
+        </div>
+    </main>
+
+    <script>
+        const intelData = {
+            "800 High": {
+                        "score": "8/10",
+                        "commute": "10 min bike",
+                        "price": "N/A",
+                        "sqft": "N/A"
+            },
+            "The Marc": {
+                        "score": "7/10",
+                        "commute": "10 min bike",
+                        "price": "N/A",
+                        "sqft": "N/A"
+            },
+            "Weatherly": {
+                        "score": "7/10",
+                        "commute": "10 min bike",
+                        "price": "N/A",
+                        "sqft": "93,626"
+            }
+};
+
+        async function loadTargets() {
+            const response = await fetch('targets.txt');
+            const text = await response.text();
+            const body = document.getElementById('intel-body');
+
+            text.split('\n').filter(line => line.trim() && !line.startsWith('#')).forEach(line => {
+                const [name, url] = line.split('|');
+                if(!name || !url) return;
+                const row = body.insertRow();
+                const cell1 = row.insertCell(0);
+                const cell2 = row.insertCell(1);
+                const cell3 = row.insertCell(2);
+
+                const a = document.createElement('a');
+                a.href = url.trim();
+                a.innerText = name.trim();
+                a.target = '_blank';
+                a.className = 'intel-link';
+                cell1.appendChild(a);
+
+                const data = intelData[name.trim()] || { score: "Pending", commute: "Pending" };
+                cell2.innerText = data.score;
+                cell3.innerText = data.commute;
+            });
+        }
+        loadTargets();
+    </script>
+</body>
+</html>
