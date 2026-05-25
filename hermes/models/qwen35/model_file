@@ -1,0 +1,8 @@
+# pull your existing Hermes model (replace with your exact model name if different)
+# and run:
+# $ ollama create qwen35-fixed -f ./model_file
+FROM qwen3.5:9b
+
+# set the system stop tokens to prevent text bleeding and subsequent hallucinations
+PARAMETER stop "<|im_start|>"
+PARAMETER stop "<|im_end|>"

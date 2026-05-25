@@ -1,0 +1,9 @@
+# $ ollama create gemma4-json -f ~/Projects/agents/hermes/gemma4/model_file
+FROM gemma4:e4b
+TEMPLATE """{{ if .System }}<|system|>
+{{ .System }}<|im_end|>
+{{ end }}{{ if .Prompt }}<|user|>
+{{ .Prompt }}<|im_end|>
+{{ end }}<|assistant|>
+{{ .Response }}<|im_end|>"""
+SYSTEM """You are a helpful assistant. You must output all tool calls as strict JSON markdown codeblocks. Do not use XML tags."""

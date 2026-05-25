@@ -1,0 +1,1 @@
+/Users/jim/.hermes/SOUL.md

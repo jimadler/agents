@@ -1,0 +1,11 @@
+version: "3"
+agent:
+    authtoken: [AUTH TOKEN HERE]
+
+tunnels:
+    dashboard:
+        proto: http
+        addr: 8000
+    existing:
+        proto: http
+        addr: 3000

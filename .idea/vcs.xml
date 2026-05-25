@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="VcsDirectoryMappings">
+    <mapping directory="$USER_HOME$/Library/Mobile Documents/com~apple~CloudDocs/Documents/iCloud/Projects/investments" vcs="Git" />
+    <mapping directory="$USER_HOME$/Library/Mobile Documents/com~apple~CloudDocs/Documents/iCloud/Projects/packages/alpaca/pipeline-live" vcs="Git" />
+    <mapping directory="$USER_HOME$/Library/Mobile Documents/com~apple~CloudDocs/Documents/iCloud/Projects/packages/backtrader" vcs="Git" />
+    <mapping directory="$USER_HOME$/Library/Mobile Documents/com~apple~CloudDocs/Documents/iCloud/Projects/packages/backtrader_plotting" vcs="Git" />
+    <mapping directory="$USER_HOME$/Library/Mobile Documents/com~apple~CloudDocs/Documents/iCloud/Projects/packages/btplotting" vcs="Git" />
+    <mapping directory="$USER_HOME$/Library/Mobile Documents/com~apple~CloudDocs/Documents/iCloud/Projects/packages/iso4217parse" vcs="Git" />
+    <mapping directory="$USER_HOME$/Library/Mobile Documents/com~apple~CloudDocs/Documents/iCloud/Projects/packages/mlfinlab" vcs="Git" />
+    <mapping directory="$USER_HOME$/Library/Mobile Documents/com~apple~CloudDocs/Documents/iCloud/Projects/packages/pybigquery" vcs="Git" />
+    <mapping directory="$USER_HOME$/Library/Mobile Documents/com~apple~CloudDocs/Documents/iCloud/Projects/packages/pyfolio" vcs="Git" />
+    <mapping directory="$USER_HOME$/Library/Mobile Documents/com~apple~CloudDocs/Documents/iCloud/Projects/packages/pysystemtrade" vcs="Git" />
+    <mapping directory="$USER_HOME$/Library/Mobile Documents/com~apple~CloudDocs/Documents/iCloud/Projects/packages/python-docs-samples" vcs="Git" />
+    <mapping directory="$USER_HOME$/Library/Mobile Documents/com~apple~CloudDocs/Documents/iCloud/Projects/packages/sqlitis" vcs="Git" />
+    <mapping directory="$USER_HOME$/Library/Mobile Documents/com~apple~CloudDocs/Documents/iCloud/Projects/packages/zipline" vcs="Git" />
+    <mapping directory="$USER_HOME$/Library/Mobile Documents/com~apple~CloudDocs/Documents/iCloud/Projects/taiv" vcs="Git" />
+    <mapping directory="$USER_HOME$/Library/Mobile Documents/com~apple~CloudDocs/Documents/iCloud/Projects/tv/ToyotaVentures" vcs="Git" />
+    <mapping directory="$USER_HOME$/Library/Mobile Documents/com~apple~CloudDocs/Documents/iCloud/Projects/websites/pierceadler.com" vcs="Git" />
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/__data__/hermes/hermes-agent" vcs="Git" />
   </component>
 </project>
