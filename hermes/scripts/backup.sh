@@ -20,4 +20,8 @@ tar -czvf "$BACKUP_FILE" \
   sessions/ \
   state.db
 
+# Copy a few files to keep them under source control
+cp $HOME/.hermes/SOUL.md $HOME/Projects/agents/hermes/dot-hermes/SOUL.md
+cp $HOME/.hermes/config.yaml $HOME/Projects/agents/hermes/dot-hermes/config.yaml
+
 echo "Backup complete."
